@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['sfmdeveloper@icloud.com']
   spec.description   = %q{Show project dependencies with HTML file.}
   spec.summary       = %q{Show project dependencies with HTML file.}
-  spec.homepage      = 'https://github.com/EXAMPLE/cocoapods-dependency-html'
+  spec.homepage      = 'https://github.com/sfmDev/cocoapods-dependency-html'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
