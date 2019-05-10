@@ -174,7 +174,7 @@ module Pod
             require 'yaml'
             require 'launchy'
             p `rm -rf dependency_graph.html`
-            p `wget https://raw.githubusercontent.com/sfmDev/cocoapods-dependency/master/lib/cocoapods-dependency/front-end/dependency_graph.html`
+            p `wget https://raw.githubusercontent.com/sfmDev/cocoapods-dependency-html/master/lib/cocoapods-dependency-html/command/front-end/dependency_graph.html`
             Launchy.open("./dependency_graph.html")
           end
         end
