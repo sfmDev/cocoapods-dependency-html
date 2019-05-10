@@ -1,0 +1,13 @@
+current directory: /Users/SFM/workspace/cocoapods-dependency-html/vendor/bundle/gems/json-2.2.0/ext/json
+/usr/local/opt/ruby/bin/ruby -r ./siteconf20190510-95033-1ktzcw5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/SFM/workspace/cocoapods-dependency-html/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/SFM/workspace/cocoapods-dependency-html/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/SFM/workspace/cocoapods-dependency-html/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" install

@@ -1,0 +1,73 @@
+#should shortcut for #it('should')
+  - should be called
+  - should save some characters by typing should
+  - should save characters even on failure
+  - should work nested
+  - should add new specifications
+  - should have been called
+
+A non-true value
+  - should pass negated tests inside specs
+  - should pass negated tests outside specs
+
+Bacon
+  - should have should.satisfy
+  - should have should.==
+  - should have should.equal
+  - should have should.raise
+  - should have should.change
+  - should have should.raise with a block
+  - should have a should.raise should return the exception
+  - should have should.be.an.instance_of
+  - should have should.be.nil
+  - should have should.include
+  - should have should.be.a.kind_of
+  - should have should.match
+  - should have should.not.raise
+  - should have should.throw
+  - should have should.not.satisfy
+  - should have should.not.equal
+  - should have should.not.match
+  - should have should.be.identical_to/same_as
+  - should have should.respond_to
+  - should have should.be.close
+  - should support multiple negation
+  - should have should.<predicate>
+  - should have should <operator> (>, >=, <, <=, ===)
+  - should allow for custom shoulds
+  - should have should.flunk
+
+before/after
+  - should run in the right order
+  when nested
+    - should run from higher level
+    - should run at the nested level
+    - should run in the right order
+  - should not run from lower level
+  when nested at a sibling level
+    - should not run from sibling level
+
+shared/behaves_like
+  - gets called where it is included
+  - raises NameError when the context is not found
+  - gets called where it is included
+  - can access data
+
+Methods
+  - should be accessible in a test
+  when in a sibling context
+    - should be accessible in a test
+
+describe arguments
+  - should work with string  string
+
+  - should work with symbols  behaviour
+
+  - should work with modules  Bacon
+
+  - should work with namespaced modules  Bacon::Context
+
+  - should work with multiple arguments  Bacon::Context empty
+
+
+50 specifications (408 requirements), 0 failures, 0 errors

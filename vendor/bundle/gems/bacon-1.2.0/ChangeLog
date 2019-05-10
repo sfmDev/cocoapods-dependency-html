@@ -1,0 +1,350 @@
+Fri Dec 21 11:49:56 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Update README
+
+Fri Dec 21 11:45:44 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Replace ChangeLog generator
+
+Fri Dec 21 11:45:31 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Update copyright years
+
+Fri Dec 21 11:42:19 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Rename README README.rdoc
+
+Wed Mar 21 04:27:31 2012 -0700  Christian Neukirchen <chneukirchen@gmail.com>
+  * Merge pull request #11 from cldwalker/fix_change_tests
+
+    Fix change tests for jruby and sometimes 1.8.7
+Tue Mar 20 18:19:29 2012 -0400  Gabriel Horner <gabriel.horner@gmail.com>
+  * all tests green - remove allowed_failures for travis
+
+Tue Mar 20 18:02:51 2012 -0400  Gabriel Horner <gabriel.horner@gmail.com>
+  * fix should.change tests failing intermittently on jruby + 1.8.7
+
+    see http://travis-ci.org/#!/cldwalker/bacon/builds/910141 tests were
+    running so fast that Time.now remains the same
+
+Fri Mar 16 19:30:08 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Update README
+
+Fri Mar 16 11:42:46 2012 -0400  Gabriel Horner <gabriel.horner@gmail.com>
+  * Add travis to see tests pass on supported rubies
+
+Fri Mar 16 19:14:14 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Push version to 1.2
+
+Fri Mar 16 19:11:20 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add tests for should.==
+
+    Proposed by Gabriel Horner <gabriel.horner@gmail.com>.
+
+Fri Mar 16 19:05:34 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Remove passing arguments in #satisfy, simplify argument parsing
+
+    This feature was never used and triggers a JRuby bug: 
+    http://jira.codehaus.org/browse/JRUBY-6550
+
+    Proposed by Gabriel Horner <gabriel.horner@gmail.com>.
+
+Fri Mar 16 19:03:58 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Whitespace cleanup
+
+Sun Feb 26 17:50:46 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add specs for change?
+
+Sun Feb 26 17:48:57 2012 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Fix Context#change?
+
+Wed Dec 28 12:23:29 2011 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Merge remote-tracking branch 'jeffkreeftmeijer/master'
+
+Wed Dec 28 03:17:12 2011 -0800  Christian Neukirchen <chneukirchen@gmail.com>
+  * Merge pull request #6 from manveru/master
+
+    Two minor fixes
+Wed Dec 28 03:54:58 2011 +0100  Michael Fellinger <m.fellinger@gmail.com>
+  * Avoid warning about unused variable
+
+Wed Dec 28 03:54:19 2011 +0100  Michael Fellinger <m.fellinger@gmail.com>
+  * Update deprecated calls in rakefile
+
+Sun Jan 16 14:38:05 2011 +0100  Jeff Kreeftmeijer <jeff@kreeftmeijer.nl>
+  * Move the Gem::Specification to bacon.gemspec
+
+    So the gem can be built and released using gem build and gem push and to
+    allow tools like Bundler to install Bacon from git or from the local
+    filesystem.
+
+Wed Apr 14 05:40:31 2010 -0400  Gabriel Horner <gabriel.horner@gmail.com>
+  * Indent nested contexts for SpecDoxOutput Based on similar patch from
+    http://github.com/wvl/bacon/commit/af940dbeb789f5eef2d998e227e5425d
+
+Mon Mar 29 14:06:47 2010 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Merge remote branch 'cldwalker/timer'
+
+Sun Mar 28 23:16:49 2010 -0400  Gabriel Horner <gabriel.horner@gmail.com>
+  * give TestUnitOutput the same timer that Test::Unit has
+
+Sat Mar 20 04:19:18 2010 -0400  Gabriel Horner <gabriel.horner@gmail.com>
+  * methods in a context should serve as behavior that is inherited by sibling
+    contexts
+
+Sun Jan 17 12:17:42 2010 -0800  Eoin Hennessy <eoin@randomrules.org>
+  * Add support for finding specs with RSpec style naming.
+
+Tue Sep 22 21:17:55 2009 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add ChangeLog as gem dependency reported by lian
+
+Mon Aug 31 23:36:56 2009 +0200  Eloy Duran <eloy.de.enige@gmail.com>
+  * Revert old change that was made because 1.9.0 couldn't rescue a splatted
+    array of Exception classes. MacRuby currently can't use when with the same
+    array and 1.9.2dev does.
+
+    Also some other minor changes which didn't work currently on 1.9.2dev,
+    but are nicer anyway imo.
+
+Thu Jan 22 06:07:53 2009 +0000  Anna Gabutero <amdg@lavabit.com>
+  * Add libs to include path when invoking Test::Unit
+
+Sun Jan 11 14:41:01 2009 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Update homepage
+
+Sat Jan 10 14:01:30 2009 -0800  Christian Neukirchen <chneukirchen@gmail.com>
+  * Allow negated nontrue values outside specs
+
+Sat Jan 10 13:44:14 2009 -0800  Ian Dees <undees@gmail.com>
+  * Added test for nontrue values outside specs
+
+Sun Nov 30 11:14:31 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Push VERSION to 1.1
+
+Sun Nov 30 11:13:33 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Last fixes
+
+Sun Nov 30 11:06:09 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Update README
+
+Sun Nov 30 11:00:28 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add Knock output
+
+Sat Oct 25 12:30:00 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * De-metaprogram and document nested before/after
+
+Fri Oct 24 17:20:17 2008 -0500  Yossef Mendelssohn <ymendel@pobox.com>
+  * Having higher-level after blocks also be run for nested contexts.
+
+Fri Oct 24 17:14:30 2008 -0500  Yossef Mendelssohn <ymendel@pobox.com>
+  * Cleaning up setting of nested before blocks
+
+Fri Oct 24 17:09:42 2008 -0500  Yossef Mendelssohn <ymendel@pobox.com>
+  * Ensuring that nested before blocks are run in the correct order
+
+Fri Oct 24 17:06:18 2008 -0500  Yossef Mendelssohn <ymendel@pobox.com>
+  * Ensuring that before blocks don't bleed into sibling levels
+
+Fri Oct 24 17:01:51 2008 -0500  Yossef Mendelssohn <ymendel@pobox.com>
+  * Letting before blocks be run from higher levels in nested context
+
+    Split up Context#initialize to let running be a separate step. Added
+    attr_reader for Context name and block to let the running step have
+    access to them without resorting to instance variables.
+
+Sat Oct 4 13:38:23 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Move to git
+
+Sun Aug 17 13:32:40 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add option to disable backtraces
+
+Sun Aug 17 12:48:29 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Don't %-expand twice in TAP output
+
+Fri Aug 1 12:01:28 2008 +0200  jftucker <jftucker@gmail.com>
+  * pols-for-at-exit
+
+    Added an alias for summary_on_exit to summary_at_exit to save on POLS
+    for some people (me!).
+
+Sun Jul 6 18:47:42 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add bacon_rspec.rb to avoid errors when .bacon doesn't exist
+
+Sun Jul 6 18:05:13 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Push VERSION to 1.0
+
+Sun Jul 6 18:04:55 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Small reformatting
+
+Sun Jul 6 18:04:41 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Update README
+
+Sun Jul 6 18:03:51 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Allow 50 lines more code
+
+Sun Jul 6 17:46:07 2008 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Suppress warnings when the suite loads Bacon again
+
+Wed Jun 25 13:56:34 2008 +0200  jftucker <jftucker@gmail.com>
+  * support spec/test subdirs for -a
+
+Wed Jun 25 13:20:29 2008 +0200  jftucker <jftucker@gmail.com>
+  * support mappings for subdirs in autotest
+
+Wed Jun 25 00:27:08 2008 +0200  jftucker <jftucker@gmail.com>
+  * adding autotest support
+
+    The autotest auto discovery uses bacons test/unit output. It does not
+    currently call specific examples (TODO). It currently attempts to fix
+    the rspec auto discovery by removing it if it finds a .bacon under test/
+    or spec/. In fact, these are the only conditions under which the bacon
+    autotest will load.
+
+Thu Mar 13 04:00:42 2008 +0100  Michael Fellinger m.fellinger@gmail.com <chneukirchen@gmail.com>
+  * Show exception instead of missing error if a spec is empty because of it.
+
+Sun Mar 2 11:52:38 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Call after-blocks even if before-blocks or spec raise exceptions
+
+    Based on a patch by Keita Yamaguchi
+
+Sun Mar 2 11:52:09 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Count failed requirements too
+
+Sun Feb 10 18:45:24 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Reformats
+
+Sun Feb 10 18:42:32 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Empty specifications are now erroneous
+
+Sun Feb 10 14:49:58 2008 +0100  Michael Fellinger <m.fellinger@gmail.com>
+  * Improve require for lib/bacon
+
+Wed Jan 23 23:59:40 2008 +0100  rff.rff <rff.rff@gmail.com>
+  * allows multiple arguments to #describe to allow specialized behaviours such
+    as
+
+     describe Queue,'empty'
+    describe Queue,'full'
+
+    Some tests for this and manveru's latest patch are included
+
+Sat Jan 19 23:07:25 2008 +0100  Michael Fellinger <m.fellinger@gmail.com>
+  * #to_s the argument to describe
+
+Fri Jan 18 15:25:27 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Flunk if there are no arguments to #it
+
+Mon Jan 14 01:34:44 2008 +0100  rff.rff <rff.rff@gmail.com>
+  * add should('foo') shortcut for it('should foo')
+
+Mon Jan 7 20:24:04 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Last minute
+
+Mon Jan 7 20:21:43 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Update copyright
+
+Mon Jan 7 20:08:40 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Tighten code
+
+Mon Jan 7 19:33:39 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Update README
+
+Mon Jan 7 19:33:25 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add bacon -o FORMAT
+
+Mon Jan 7 19:33:07 2008 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Improve TAP output
+
+Mon Dec 31 19:01:49 2007 +0100  Michael Fellinger <m.fellinger@gmail.com>
+  * behaves_like should take multiple names
+
+Sun Dec 30 19:38:18 2007 +0100  Michael Fellinger <m.fellinger@gmail.com>
+  * Adding Proc#change? to check for changes on repeated calling of proc.
+
+Fri Dec 28 12:42:04 2007 +0100  Michael Fellinger <m.fellinger@gmail.com>
+  * Patching for ruby 1.9.0 and removing useless spaces
+
+Wed Dec 5 14:56:51 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Make code nicer
+
+Wed Dec 5 14:48:06 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Fix Rakefile
+
+Wed Dec 5 14:46:32 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Integrate Rakefile
+
+Wed Dec 5 14:43:26 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add Rakefile
+
+Wed Dec 5 14:41:53 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add README
+
+Wed Dec 5 14:41:26 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add copyright
+
+Wed Dec 5 14:18:54 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Move #close? to Numeric
+
+Wed Dec 5 14:11:34 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add flunking
+
+Wed Dec 5 13:42:13 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Allow using Object#should outside of contexts providing boolean return
+
+Wed Dec 5 13:41:00 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Move summary outputter to lib/bacon.rb
+
+Wed Dec 5 13:26:27 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Fix output of summary
+
+Wed Dec 5 13:26:16 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add identical_to/same_as
+
+Wed Dec 5 02:12:24 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Remove debugging statements
+
+Wed Dec 5 02:00:03 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Refactor tests
+
+Wed Dec 5 01:58:08 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Test Context#should.{throw,raise}
+
+Wed Dec 5 01:56:29 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add should.throw
+
+Wed Dec 5 01:49:33 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Implement -n and -t for filtering on context/specification names
+
+Wed Dec 5 01:41:56 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add shared contexts
+
+Wed Dec 5 01:41:39 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Make directives belong to Kernel and private
+
+Wed Dec 5 01:41:17 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Clear up error reporting
+
+Wed Dec 5 01:23:27 2007 +0100  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add TAP generator
+
+Thu May 31 14:32:48 2007 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Set correct $?
+
+Thu May 31 14:28:35 2007 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add Test::Unit-like output (-q)
+
+Thu May 31 14:18:00 2007 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Add standalone runner, bin/bacon
+
+Thu May 31 14:17:40 2007 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Import test-suite
+
+Thu May 31 14:17:05 2007 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Fix for testsuite
+
+Thu May 31 14:16:25 2007 +0200  Christian Neukirchen <chneukirchen@gmail.com>
+  * Fix output
+
+Wed May 30 17:50:23 2007 +0200  Christian Neukirchen <chneukirchenÂÂ@gmail.com>
+  * Externalize spec/req handling
+
+Wed May 30 17:32:15 2007 +0200  Christian Neukirchen <chneukirchenÂÂ@gmail.com>
+  * Import Bacon, a small spec framework
+
