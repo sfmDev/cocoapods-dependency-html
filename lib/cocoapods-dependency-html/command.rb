@@ -1,1 +1,1 @@
-require 'cocoapods-dependency-html/command/html'
+require 'cocoapods-dependency-html/command/dependency'
